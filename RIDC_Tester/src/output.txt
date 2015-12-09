@@ -1,0 +1,467 @@
+/home/oracle/jdev/oracle_common/jdk/bin/java -server -classpath /home/oracle/jdev/mywork/WccApps/.adf:/home/oracle/jdev/mywork/WccApps/RIDC_Tester/classes:/home/oracle/jdev/mywork/WccApps/RIDC_Tester/lib/commons-configuration-1.8.jar:/home/oracle/jdev/mywork/WccApps/RIDC_Tester/lib/commons-lang-2.6.jar:/home/oracle/jdev/mywork/WccApps/RIDC_Tester/lib/commons-logging-1.1.1.jar:/home/oracle/jdev/mywork/WccApps/RIDC_Tester/lib/oracle.ucm.ridc-11.1.1.jar -Djavax.net.ssl.trustStore=/tmp/trustStore6173089988098154245.jks ridc_tester.RIDC_generic_tester
+
+ridc_generic_tester ...
+
+connectionString: idc://wcp12c:4444
+user: oracle
+service: GET_SEARCH_RESULTS
+
+QueryText=dDocType <matches> `Document`
+SortField=dDocName
+SortDesc=ASC
+
+Results ...
+
+<?hda version="12.2.1.0.0-2015-10-07 14:09:53Z-r135663" jcharset="UTF8" encoding="utf-8"?>
+@Properties LocalData
+ClientEncoding=UTF-8
+ComputedSearchEngineName=ORACLETEXTSEARCH
+EndRow=5
+EnterpriseSearchMaxRows=4
+FullRequest=&QueryText=dDocType+%3cmatches%3e+%60Document%60&SortField=dDocName&SortOrder=Desc
+HasRowAndDocCount=true
+IdcService=GET_SEARCH_RESULTS
+IsJava=1
+NoHttpHeaders=0
+NumPages=1
+OriginalQueryText=dDocType+%3cmatches%3e+%60Document%60
+OriginalUnencodedQueryText=dDocType <matches> `Document`
+PageNumber=1
+QueryText=dDocType+%3cmatches%3e+%60Document%60
+SearchEngineIsDefault=
+SearchProviders=wcp12cmythicslocal16200
+SortDesc=ASC
+SortField=dDocName
+SortOrder=Desc
+StartRow=1
+Text1=<span class=searchLabel><$xml(dDocTitle)$>&nbsp;&nbsp;</span><span class=xsmall><$if isRtl$>&#8207;<$endif$>[&nbsp;<$dDocName$>&nbsp;<$if isRtl$>&#8207;<$endif$>]</span>
+Text2=<span class=xsmall><span class=infoLabel><$lc("wwContentAuthorLabel")$></span><$dDocAuthor$> \r\n<span class=infoLabel><$lc("wwLabelRevision")$></span> <$dRevLabel$></span><br>\r\n<span class=xsmall><span class=infoLabel><$lc("wwLabelReleaseDate")$></span> <$dInDate$>&nbsp;&nbsp;\r\n<$if SCORE$><span class=infoLabel><$lc("wwScore")$>:</span> <$SCORE$><$endif$></span><br>\r\n<$if xComments$>\r\n<span class=xxsmall><font color=<$highlightFieldColor$>><$xComments$></font></span>\r\n<$endif$>\r\n<table valign=bottom align=<$lineEndAlignment$>><tr><td><span class=xxsmall>\r\n<$dFormat$> <$(VaultFileSize+1023)/1024$>K\r\n</td></tr></table>
+TotalDocsProcessed=5
+TotalRows=5
+TranslatedQueryText= ((Document) WITHIN dDocType) 
+UnparsedQueryText=dDocType <matches> `Document`
+UserDateFormat=iso8601
+UserTimeZone=UTC
+blDateFormat=yyyy-MM-dd HH:mm:ssZ!tUTC!mAM,PM
+blFieldTypes=vaultfilesize int,drevclassid int,xIdcProfile text,ddoclastmodifieddate date,xIsACLReadOnlyOnUI int,xComments memo,VaultFileSize int,WebFileSize int,dInDate date,doutdate date,dMessage message,xParentFolders memo,webfilesize int,xPartitionId text,xWebFlag text,xStorageRule text,xTemplateType text,drevisionid int,xAnnotationDetails int,ddoccreateddate date,dindate date,StatusMessage message,dReleaseDate date,dCreateDate date,dDocCreatedDate date,dOutDate date,dRevClassID int,xExternalDataSet bigtext,dRevisionID int,dcreatedate date,dDocLastModifiedDate date,xLibraryGUID bigtext,dID int,did int
+changedMonikers=
+changedSubjects=
+dUser=oracle
+dpAction=Search
+dpEvent=OnRequest
+dpTriggerField=xIdcProfile
+escapeReservedStringsInSearch=false
+idcToken=
+isDocProfileDone=1
+isDocProfileUsed=true
+localizedForResponse=1
+refreshMonikers=
+refreshSubMonikers=
+refreshSubjects=
+useOnlyLocalForDpTrigger=1
+validateSearchQuery=false
+wcp12cmythicslocal16200:conversionFormat=
+@end
+@ResultSet EnterpriseSearchResults
+18
+ProviderName
+ProviderDescription
+IDC_Name
+InstanceMenuLabel
+InstanceDescription
+IntradocServerHostName
+HttpRelativeWebRoot
+IsImplicitlySearched
+UserAccounts
+IsLocalCollection
+Selected
+StatusCode
+StatusMessage
+ResultSetName
+SearchCgiWebUrl
+TotalRows
+TotalDocsProcessed
+HasMoreRows
+wcp12cmythicslocal16200
+!csProviderLocalContentServerLabel
+wcp12cmythicslocal16200
+wcp12cmythicslocal16200
+Instance wcp12cmythicslocal16200
+wcp12c.mythics.local:7777
+/cs/
+
+
+true
+
+0
+Success
+wcp12cmythicslocal16200
+/cs/idcplg/cs/pxs
+5
+
+
+@end
+@ResultSet SearchResultNavigationdSecurityGroup
+4
+drillDownOptionValue
+drillDownModifier
+count
+fieldName
+PersonalSpaces
+PersonalSpaces
+1
+dSecurityGroup
+Public
+Public
+3
+dSecurityGroup
+Secure
+Secure
+1
+dSecurityGroup
+@end
+@ResultSet SearchResultNavigation
+5
+drillDownFieldName
+drillDownDisplayValue
+categoryCount
+totalCount
+drillDownDisplayViewName
+dDocType
+wwdDocType
+1
+5
+docTypes
+dSecurityGroup
+wwdSecurityGroup
+3
+5
+securityGroups
+dDocAccount
+wwdDocAccount
+1
+5
+DocumentAccounts
+@end
+@ResultSet NavigationPages
+5
+HeaderPageNumber
+PageReference
+PageNumber
+StartRow
+EndRow
+1
+1
+1
+1
+5
+@end
+@ResultSet UserAttribInfo
+2
+dUserName
+AttributeInfo
+oracle
+account,#none,15,account,AUTHEN,1,account,WCILS,15,account,PEWebCenter/PU,1,account,Secure/PU,1,account,PUBLIC,1,role,guest,15,role,PersonalSpacesAuthenRole,1,role,SecureAuthenUser,1,role,PersonalSpacesRole,1,role,SecureUser,1,role,authenticated,15
+@end
+@ResultSet SearchResults
+44
+dDocName 6 30
+dDocTitle 6 255
+dDocType 6 30
+dSecurityGroup 6 30
+dInDate 5 20
+xLibraryGUID 6 200
+dRevisionID 3 38
+dDocCreator 6 200
+dWebExtension 6 255
+dDocCreatedDate 5 20
+dCreateDate 5 20
+dOriginalName 6 255
+dFormat 6 80
+dPublishType 6 7
+dDocFunction 6 50
+dDocClass 6 80
+dDocAuthor 6 200
+VaultFileSize 3 38
+dDocLastModifier 6 200
+xWebFlag 6 30
+dOutDate 5 20
+dGif 6 50
+dExtension 6 255
+dDocLastModifiedDate 5 20
+AlternateFormat 6 80
+URL 6 1024
+WebFileSize 3 38
+dDocOwner 6 200
+dRevClassID 3 38
+xPartitionId 6 30
+xComments 6 2000
+dRevLabel 6 10
+xStorageRule 6 30
+dFullTextFormat 6 80
+dRendition2 6 7
+dRendition1 6 7
+dID 3 38
+dDocAccount 6 80
+xIdcProfile 6 30
+otsFormat 6 2000
+otsCharset 6 2000
+otsLanguage 6 2000
+SCORE 3 38
+srfDocSnippet 6 4000
+MYT000005
+TestWordDocWithHeadings
+Document
+PersonalSpaces
+2015-11-09 02:07:40Z
+C8970EC746815174FDD34B12C31C6E0C
+1
+weblogic
+pdf
+2015-11-09 02:07:45Z
+2015-11-09 02:07:45Z
+TestWordDocWithHeadings.docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+
+weblogic
+13292
+weblogic
+
+
+ucm_document.png
+docx
+2015-11-09 02:07:45Z
+
+/cs/groups/personalspaces/documents/document/bxl0/mdaw/~edisp/myt000005.pdf
+33691
+weblogic
+5
+
+
+1
+DispByContentId
+txt
+D
+T
+5
+
+
+
+
+
+3
+
+MYT000003
+Full Text Indexing Test doc
+Document
+Public
+2015-11-09 01:28:00Z
+
+1
+weblogic
+pdf
+2015-11-09 01:28:31Z
+2015-11-09 01:28:31Z
+full-text-indexing-test-for-libx.pdf
+application/pdf
+
+
+
+weblogic
+121979
+weblogic
+
+
+ucm_document.png
+pdf
+2015-11-09 01:28:31Z
+
+/cs/groups/public/documents/document/bxl0/mdaw/~edisp/myt000003.pdf
+121979
+weblogic
+3
+
+
+1
+DispByContentId
+txt
+
+
+3
+
+
+
+
+
+3
+
+MYT000002
+IBR Conversions Test doc
+Document
+Public
+2015-11-09 01:27:00Z
+
+1
+weblogic
+pdf
+2015-11-09 01:27:58Z
+2015-11-09 01:27:58Z
+IBR Conversions Test doc.docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+
+weblogic
+461540
+weblogic
+
+
+ucm_document.png
+docx
+2015-11-09 01:27:58Z
+
+/cs/groups/public/documents/document/bxl0/mdaw/~edisp/myt000002.pdf
+136357
+weblogic
+2
+
+
+1
+DispByContentId
+txt
+
+T
+2
+
+
+
+
+
+3
+
+MYT000001
+test123
+Document
+Public
+2015-11-09 00:56:00Z
+
+1
+weblogic
+pdf
+2015-11-09 00:57:33Z
+2015-11-09 00:57:33Z
+test1-excel.pdf
+application/pdf
+
+
+
+weblogic
+179659
+weblogic
+
+
+ucm_document.png
+pdf
+2015-11-09 00:57:33Z
+
+/cs/groups/public/documents/document/bxl0/mdaw/~edisp/myt000001.pdf
+179659
+weblogic
+1
+
+
+1
+DispByContentId
+txt
+
+
+1
+
+
+
+
+
+3
+
+ID_SECURE
+oracle-webcenter-doclib-seeding-marker.xml
+Document
+Secure
+2015-11-17 01:26:48Z
+
+1
+weblogic
+xml
+2015-11-17 01:26:48Z
+2015-11-17 01:26:48Z
+oracle-webcenter-doclib-seeding-marker.xml
+application/xml
+
+
+
+weblogic
+709
+weblogic
+
+
+ucm_document.png
+xml
+2015-11-17 01:26:48Z
+
+/cs/groups/secure/documents/document/awrf/c2vj/~edisp/id_secure.xml
+709
+weblogic
+401
+
+
+1
+DispByContentId
+xml
+
+
+401
+
+
+
+
+
+3
+
+@end
+@ResultSet SearchResultNavigationdDocType
+4
+drillDownOptionValue
+drillDownModifier
+count
+fieldName
+Document
+Document - Any generic document
+5
+dDocType
+@end
+@ResultSet SearchResultNavigationdDocAccount
+4
+drillDownOptionValue
+drillDownModifier
+count
+fieldName
+
+
+5
+dDocAccount
+@end
+@ResultSet AssociatedTopFields
+1
+parentField
+@end
+@ResultSet RestrictedLists
+2
+fieldName
+listType
+@end
+
+GET_SEARCH_RESULTS elapsed time: 83 milliseconds
+
+Process exited with exit code 0.
